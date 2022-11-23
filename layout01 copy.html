@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout</title>
+    <style>
+      * {
+        font-size: inherit;
+        font-weight: inherit;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ul,
+      ol {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .crew1 {
+        margin: 0 auto;
+        display: flex;
+        padding: 50px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: blanchedalmond;
+      }
+      .crew1 .inner {
+        flex: 1;
+      }
+
+      .crew1 h2 {
+        width: 100px;
+        height: 0 auto;
+        top: 10px;
+      }
+
+      .crew1 .inner {
+        position: absolute;
+        left: 500%;
+        top: 50px;
+        width: 1200px;
+        display: flex;
+        gap: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="crew1">
+      <div class="inner">
+        <h2>프론트 엔드</h2>
+        <nav>
+          <ul>
+            <li><a href="mmm">menu1</a></li>
+            <li><a href="nnn">menu2</a></li>
+            <li><a href="bbb">menu3</a></li>
+            <li><a href="vvv">menu4</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </body>
+</html>
